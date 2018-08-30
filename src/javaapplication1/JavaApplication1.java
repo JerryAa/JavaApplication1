@@ -62,7 +62,26 @@ public class JavaApplication1 {
         for (String s : arr2) {
             System.out.println(s);
         }
-
+               
+        Scanner sc = new Scanner(System.in); 
+        
+        System.out.println("Enter the length: "); 
+        int length = sc.nextInt(); 
+        
+        System.out.println("Enter the width: "); 
+        int width = sc.nextInt(); 
+        
+        Rectangle r = new Rectangle(length ,width  ); 
+        r.area(); 
+        
+        Shape s = new Rectangle(length, width); 
+        s.area(); 
+        
+        double  d = ((Rectangle)s).diagnol(); // down casting 
+ 
+    
+        System.out.println("The length " + length + " The width " + width + " The diagnol is " + d ); 
+        
     }
 
 }
