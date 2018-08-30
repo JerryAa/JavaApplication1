@@ -9,14 +9,24 @@ package javaapplication1;
  *
  * @author jerrya
  */
+
+import java.lang.Math; 
+import java.io.*; 
+
+
 public class Rectangle extends Shape {
+    private double  diagnol; 
     
     public Rectangle(int l, int w) { 
            super(l,w ); 
     }
-    
+
     @Override 
     public double area() { 
         return super.length * super.width; 
     } 
+    public double  diagnol() {
+        diagnol =  Math.sqrt(Math.pow(super.length, 2) + Math.pow(super.width, 2)); 
+        return diagnol; 
+    }
 }
