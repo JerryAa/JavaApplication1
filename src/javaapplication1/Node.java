@@ -20,5 +20,13 @@ public class Node {
     public Node(int d){ 
         this.data = d; 
     }
+    // inserting to end 
+    void insert(int d) {
+        Node end = new Node(d); 
+        Node n = this; 
+        while (n.next != null) 
+            n = n.next; 
+        n.next = end; 
+    }
     
 }
